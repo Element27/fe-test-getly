@@ -10,25 +10,33 @@ const Company = () => {
     <div className='mt-8 '>
       <form className="w-[90%]">
         <div className='formgroup'>
+          {/* Company name */}
+          <div className='w-full'>
+            <label htmlFor='lastname' className='text-xs font-medium' >Company Name
+            </label>
+            <input type="text" name='lastname' className='input' placeholder='Company' />
+          </div>
+        </div>
+        <div className='formgroup'>
           {/* first name */}
           <div className='w-full'>
-            <label htmlFor='firstName' className='text-xs font-medium' >First Name
+            <label htmlFor='firstName' className='text-xs font-medium' >Staff First Name
             </label>
             <input type="text" name='firstName' className='input' placeholder='John' />
           </div>
 
           {/* last name */}
           <div className='w-full'>
-            <label htmlFor='lastname' className='text-xs font-medium' >Last Name
+            <label htmlFor='lastname' className='text-xs font-medium' >Staff Last Name
             </label>
             <input type="text" name='lastname' className='input' placeholder='Dosunmu' />
           </div>
         </div>
         <div className='formgroup'>
 
-          {/* date of birth */}
+          {/* state date of birth */}
           <div className='w-full'>
-            <label htmlFor='DOB' className='text-xs font-medium' >Date of Birth
+            <label htmlFor='DOB' className='text-xs font-medium' >State Date of Birth
             </label>
             <input type="date" name='DOB' className='input' placeholder='1/12/2000' />
           </div>
