@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .input {
+    @apply w-full rounded bg-[#f8f5f5] px-5 py-3.5 placeholder-[#494949] border border-[#a7a6a6] outline-none;
+  }
+
+  .button {
+    @apply px-8;
+  }
+}
