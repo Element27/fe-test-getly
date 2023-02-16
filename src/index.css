@@ -10,4 +10,18 @@
   .butn {
     @apply bg-[#f7c148] px-6 py-2 w-fit flex text-sm font-medium gap-3 justify-start items-center rounded;
   }
+
+  .heading {
+    @apply text-3xl font-semibold text-[#494949];
+  }
+  .subheading {
+    @apply text-lg font-normal text-[#494949];
+  }
+  .isActive {
+    @apply border-b-4 border-b-[#f7c148];
+  }
+
+  .formgroup {
+    @apply flex flex-col lg:flex-row gap-4 w-full my-4;
+  }
 }

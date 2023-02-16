@@ -1,3 +1,6 @@
 export const LOGIN = "/"
 export const FORGOTPASSWORD = "/resetpassword"
-export const DASHBOARD = "/onboarding"
+export const CREATEACCOUNT = "/createaccount"
+export const BASICINFO = "/createaccount/basicinfo"
+export const VERIFYPHONE = "/createaccount/verifyphone"
+export const SETPIN = "/createaccount/setpin"
