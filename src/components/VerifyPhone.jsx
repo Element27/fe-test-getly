@@ -36,14 +36,16 @@ const VerifyPhone = ({ value, setValue, country,
     // console.log(cntry.cca2)
     const selectArr = []
 
-    selectArr.push(
-      <option value={cntry.cca2} key={index}>{cntry.name.common}</option>
-    )
+
 
     if (cntry.cca2 == country) {
       selectArr.push(
-        <option selected value={cntry.cca2} key={index} className=''>{cntry.name.common}</option>
+        <option selected defaultValue={cntry.cca2} value={cntry.cca2} key={index} className=''>{cntry.name.common}</option>
       )  // console.log(cntry.cca2)
+    } else {
+      selectArr.push(
+        <option value={cntry.cca2} key={index}>{cntry.name.common}</option>
+      )
     }
 
     return selectArr
@@ -53,8 +55,9 @@ const VerifyPhone = ({ value, setValue, country,
     <div>
 
 
-      <form >
-        <select onChange={onChangefunc}>
+      <form className="w-[90%]">
+
+        <select onChange={onChangefunc} className="select formgroup">
           {countryOption}
         </select>
 
