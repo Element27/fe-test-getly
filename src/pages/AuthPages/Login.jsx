@@ -2,7 +2,7 @@ import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import MainAuthComponent from '../../components/MainAuthComponent'
-import { FORGOTPASSWORD } from '../../routes'
+import { FORGOTPASSWORD, CREATEACCOUNT } from '../../routes'
 
 
 const Login = () => {
@@ -36,7 +36,7 @@ const Login = () => {
         </form>
         <div className='flex flex-col'>
           <p className='text-base font-semibold'>Forgot your password? <Link to={FORGOTPASSWORD} className='text-[#4444ee] cursor-pointer'>Reset Password</Link></p>
-          <p className='text-base font-semibold'>Don't have an account?<span className='text-[#4444ee] cursor-pointer'> Create One</span></p>
+          <p className='text-base font-semibold'>Don't have an account?<Link to={CREATEACCOUNT} className='text-[#4444ee] cursor-pointer'> Create One</Link></p>
         </div>
       </div>
     </div>

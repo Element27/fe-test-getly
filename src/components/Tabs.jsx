@@ -29,15 +29,15 @@ const Tabs = ({ setIsBasicActive,
 
         {/* Navigating through the tabs will be handled on the form. when the form information is fully filled, user is able to navigate to the next tab and fill the next information, the next tab will also allow navigation to the previous tab and possible allow the information to be viewed */}
 
-        <p className='text-lg font-normal text-left w-1/3 '>
+        <p className='text-sm md:text-lg font-normal text-left w-1/3 '>
           <span className={`${isBasicActive && "isActive"} cursor-pointer `}
             onClick={toggleBasicActive}
-          >Basic Information</span></p>
-        <p className='text-lg font-normal text-left w-1/3'>
+          >Basic Info<span className='hidden md:inline-block'>rmation</span></span></p>
+        <p className='text-sm md:text-lg font-normal text-left w-1/3'>
           <span className={`${isVerifyActive && "isActive"} cursor-pointer `}
             onClick={toggleVerifyActive}
           >Verify Phone</span></p>
-        <p className='text-lg font-normal text-left w-1/3'>
+        <p className='text-sm md:text-lg font-normal text-left w-1/3'>
           <span className={`${isSetpinActive && "isActive"} cursor-pointer `}
             onClick={toggleSetpinActive}
           >Set PIN</span></p>

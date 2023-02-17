@@ -16,7 +16,7 @@ const BasicInfoTab = ({ isIndividual,
   }
 
   return (
-    <div className='flex gap-8'>
+    <div className='flex gap-8 justify-center lg:justify-start'>
       <button className={`text-sm font-normal flex gap-3 justify-center items-center px-3 py-3 rounded border ${isIndividual ? "border-[#f7c148]" : "border-[#dadada]"}`} onClick={toggleIndividual}>
         Individual
         <FiUser className={`${isIndividual ? "text-[#f7c148]" : "text-[#494949]"} text-xl`} />
