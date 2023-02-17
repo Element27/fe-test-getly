@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input'
+import PhoneInput, {getCountries} from 'react-phone-number-input'
 import { BsArrowRight } from 'react-icons/bs'
 
-const Individual = () => {
-  const [value, setValue] = useState('')
+const Individual = ({value, setValue,country,
+  setCountry}) => {
+// const [country, setCountry]=useState("NG")
 
+
+const ld = getCountries()
+// console.log(ld)
+// console.log(value)
   return (
     <div className='mt-8 '>
       <form className="w-[90%]">
@@ -37,9 +42,11 @@ const Individual = () => {
             <label htmlFor='number' className='text-xs font-medium' >Phone number
             </label>
             <PhoneInput
+           defaultCountry={country}
               className='input'
               value={value}
               onChange={setValue}
+              onCountryChange={setCountry}
             />
           </div>
         </div>

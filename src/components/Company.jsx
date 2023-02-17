@@ -3,8 +3,9 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { BsArrowRight } from 'react-icons/bs'
 
-const Company = () => {
-  const [value, setValue] = useState('')
+const Company = ({value, setValue, country,
+  setCountry}) => {
+
 
   return (
     <div className='mt-8 '>
@@ -45,9 +46,11 @@ const Company = () => {
             <label htmlFor='number' className='text-xs font-medium' >Phone number
             </label>
             <PhoneInput
+            defaultCountry={country}
               className='input'
               value={value}
               onChange={setValue}
+              onCountryChange={setCountry}
             />
           </div>
         </div>

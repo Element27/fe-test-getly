@@ -10,6 +10,9 @@ const CreateAccount = () => {
   const [isBasicActive, setIsBasicActive] = useState(true)
   const [isVerifyActive, setIsVerifyActive] = useState(false)
   const [isSetpinActive, setIsSetpinActive] = useState(false)
+  
+  const [value, setValue] = useState('')
+  const [country, setCountry] = useState('NG')
 
 
   return (
@@ -22,8 +25,7 @@ const CreateAccount = () => {
           <h3 className='heading'>Create Account</h3>
           <p className='subheading'>Kindly fill in the details below</p>
         </div>
-        {/* Navigating through the tabs will be handled on the form. when the form information is fully filled, user is able to navigate to the next tab and fill the next information, the next tab will also allow navigation to the previous tab and possible allow the information to be viewed */}
-
+    
         <Tabs
           setIsBasicActive={setIsBasicActive}
           setIsVerifyActive={setIsVerifyActive}
@@ -32,16 +34,13 @@ const CreateAccount = () => {
           isVerifyActive={isVerifyActive}
           isSetpinActive={isSetpinActive}
         />
-        {/* <div className='flex justify-between items-center border-b border-b-[#898a8d]'>
-
-
-          <p className='text-lg font-normal text-left w-1/3 '><span className='border-b-4 border-b-[#f7c148]'>Basic Information</span></p>
-          <p className='text-lg font-normal text-left w-1/3'>Verify Phone</p>
-          <p className='text-lg font-normal text-left w-1/3'>Set Pin</p>
-        </div> */}
+      
         {/* <BasicInfo /> */}
-        {isBasicActive && <BasicInfo />}
-        {isVerifyActive && <VerifyPhone />}
+        {isBasicActive && <BasicInfo value={value} setValue={setValue} 
+        country={country}
+        setCountry={setCountry}
+        />}
+        {isVerifyActive && <VerifyPhone value={value} setValue={setValue} country={country} setCountry={setCountry}/>}
         {isSetpinActive && <SetPin />}
 
         <p className='text-base font-semibold'>Already have an account? <Link className='text-[#171744] cursor-pointer'> Sign In </Link></p>
