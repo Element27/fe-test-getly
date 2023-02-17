@@ -3,8 +3,8 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { BsArrowRight } from 'react-icons/bs'
 
-const Company = ({value, setValue, country,
-  setCountry}) => {
+const Company = ({ value, setValue, country,
+  setCountry }) => {
 
 
   return (
@@ -46,7 +46,7 @@ const Company = ({value, setValue, country,
             <label htmlFor='number' className='text-xs font-medium' >Phone number
             </label>
             <PhoneInput
-            defaultCountry={country}
+              defaultCountry={country}
               className='input'
               value={value}
               onChange={setValue}
@@ -70,7 +70,7 @@ const Company = ({value, setValue, country,
             <label htmlFor='email' className='text-xs font-medium' >
               Street Address
             </label>
-            <input type="email" name='email' className='input' placeholder='johndosunmi@abcmail.com' />
+            <input type="email" name='email' className='input' placeholder='' />
           </div>
         </div>
 

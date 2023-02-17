@@ -24,6 +24,7 @@ const CreateAccount = () => {
         <MainAuthComponent />
       </div>
       <div className='w-full lg:w-2/3 flex flex-col gap-4 mx-4 md:mx-6 lg:mx-auto px-4 py-5 md:p-0 lg:mt-16 lg:mr-12 lg:ml-24 h-fit'>
+
         <div className='flex justify-center items-center flex-col lg:items-start'>
           <img src={logo} alt="" className='w-16 md:w-20 lg:hidden mb-4' />
           <h3 className='heading'>Create Account</h3>

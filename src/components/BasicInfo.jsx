@@ -4,6 +4,8 @@ import { Link } from "react-router-dom"
 import BasicInfoTab from './BasicInfoTab'
 import Company from './Company'
 import { LOGIN } from '../routes'
+
+
 const BasicInfo = ({ value, setValue, country,
   setCountry }) => {
 
@@ -12,12 +14,15 @@ const BasicInfo = ({ value, setValue, country,
   const [isCompany, setIsCompany] = useState(false)
   return (
 
-    <div>
-      <BasicInfoTab isIndividual={isIndividual}
-        setIsIndividual={setIsIndividual}
-        isCompany={isCompany}
-        setIsCompany={setIsCompany}
-      />
+    <div >
+      <div className='w-fit mx-auto'>
+
+        <BasicInfoTab isIndividual={isIndividual}
+          setIsIndividual={setIsIndividual}
+          isCompany={isCompany}
+          setIsCompany={setIsCompany}
+        />
+      </div>
 
       {isIndividual && <Individual value={value} setValue={setValue} country={country} setCountry={setCountry} />}
       {isCompany && <Company value={value} setValue={setValue} country={country} setCountry={setCountry} />}

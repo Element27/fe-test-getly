@@ -58,7 +58,7 @@ const VerifyPhone = ({ value, setValue, country,
 
       <p className='text-xs md:text-base font-light mb-3'>Select your Country of residence and enter your phone number below to get started.</p>
 
-      <form className="w-[90%] lg:w-[70%] mx-auto lg:mx-0 flex flex-col gap-4">
+      <form className="w-[90%] lg:w-[70%] flex flex-col gap-4">
         <div className='w-full'>
           <label className='label'>Country of Residence</label>
           <select onChange={onChangefunc} className="select">

@@ -13,7 +13,7 @@ const Individual = ({ value, setValue, country,
   // console.log(value)
   return (
     <div className='mt-8 '>
-      <form className="w-[90%] mx-auto lg:mx-0">
+      <form className="w-[90%]">
         <div className='formgroup'>
           {/* first name */}
           <div className='w-full'>
@@ -66,7 +66,7 @@ const Individual = ({ value, setValue, country,
             <label htmlFor='email' className='text-xs font-medium' >
               Street Address
             </label>
-            <input type="email" name='email' className='input' placeholder='johndosunmi@abcmail.com' />
+            <input type="email" name='email' className='input' placeholder='' />
           </div>
         </div>
 

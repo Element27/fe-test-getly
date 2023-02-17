@@ -5,7 +5,7 @@ const SetPin = () => {
     <div>
 
 
-      <form className="w-[90%] lg:w-[70%] mx-auto lg:mx-0 flex flex-col gap-4">
+      <form className="w-[90%] lg:w-[70%]  flex flex-col gap-4">
         <p className='text-sm font-normal mb-3'>Set a 6 digit account security PIN</p>
 
         <div className="w-full">
